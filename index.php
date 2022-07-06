@@ -7,12 +7,8 @@
     <title>Formulario</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/styles.css">
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
-    <?php
-        require_once "assets/captcha/recaptchalib.php";
-    ?>
     <nav class="navbar navbar-light">
         <div class="container">
             <a class="navbar-brand" href="/">
@@ -42,12 +38,6 @@
                 </div>
                 <div class="form_small text-start text-md-center px-3 mt-5 mx-auto">
                     <small class="form_small__text">Sus datos personales serán tratados únicamente para eventos de esta votación, una vez finalizada sus datos serán eliminados.</small>
-                </div>
-                <div class="entiendo my-4">
-                    <small class="entiendo_text">ENTIENDO</small>
-                </div>
-                <div align="center">
-                    <div class="g-recaptcha" data-sitekey="6LcPs8kgAAAAABGIR4RmBgkJTBsNpnITwTxsJgqb"></div>
                 </div>
                 <button type="submit" class="btn btn-primary btn-registrar mt-4 mb-5 px-4" name="insert">Registrar</button>
             </form>
