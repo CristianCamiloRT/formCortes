@@ -3,9 +3,8 @@
     use PhpOffice\PhpSpreadsheet\Helper\Sample;
     use PhpOffice\PhpSpreadsheet\IOFactory;
     use PhpOffice\PhpSpreadsheet\Spreadsheet;
-    use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
 
-    require('model/connection.php');
+    require('Model/Connection.php');
     $query = "SELECT * FROM datos";
     $ejecutar = mysqli_query($conexion, $query);
 
